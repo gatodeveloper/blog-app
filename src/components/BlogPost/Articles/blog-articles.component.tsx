@@ -9,7 +9,7 @@ const BlogArticles : React.FC<BlogArticlesProps> = ({articles}) => {
   return <>
     <section className="blog-posts grid grid-cols-2 gap-5">
       {
-        articles.map((article, index) => <BlogBox article={article}/>)
+        articles.map((article, index) => <BlogBox article={article} key={index}/>)
       }
     </section>
   </>

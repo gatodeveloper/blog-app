@@ -2,10 +2,10 @@ import { AxiosResponse, AxiosError } from 'axios';
 import { api, handleAxiosError } from './api';
 
 
-export const createArticle = async (): Promise<any> => {
+export const createArticle = async (payload: any): Promise<any> => {
   
   try {
-    const response: AxiosResponse<any> = await api.post('/articles');
+    const response: AxiosResponse<any> = await api.post('/articles', payload);
     return response.data;
   } catch (error) {
     handleAxiosError(error as AxiosError);

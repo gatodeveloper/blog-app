@@ -1,7 +1,7 @@
 export interface IBlogArticle {
     title: string;
     description: string;
-    slug: string
+    slug?: string
     content?: string
     image?: string;
 }
