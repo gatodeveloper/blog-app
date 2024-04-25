@@ -8,7 +8,7 @@ export interface RafflesPageQuery extends ParsedUrlQuery {
   slug: string
 }
 
-const BlogPostDetail = async ({ params: { slug }} : { params: RafflesPageQuery})  => {      
+  const BlogPostDetail = async ({ params: { slug }} : { params: RafflesPageQuery})  => {      
   const author = DEFAULT_AUTHOR
   const article = await getArticle(slug)
 

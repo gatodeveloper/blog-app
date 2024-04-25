@@ -9,17 +9,6 @@ const BlogPage = async () => {
   const articles = response
   
 
-  // const articles : IBlogArticle[] = [{
-  //   title: "Lorem",
-  //   description: "Lorem ipsum",
-  //   link: "1"
-  // },
-  // {
-  //   title: "Lorem",
-  //   description: "Lorem ipsum",
-  //   link: "1"
-  // }]
-
   return (
     <>
       <section className="hero-banner container">        
